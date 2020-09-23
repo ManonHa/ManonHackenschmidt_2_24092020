@@ -20,7 +20,7 @@
 nav ul
 {
 	display: flex;
-	text-align: right;
+	justify-content: flex-end;
 }
 
 .localisation 
@@ -40,6 +40,7 @@ h1
 {
 	font-family: 'ranchoregular', Arial, sans-serif;
 	font-size: 4em;
+	color: #0065FC;
 }
 
 span
@@ -64,57 +65,20 @@ li
 	border-top-right-radius: 30px;
 	border-top-left-radius: 30px;
 }
-
-.cannebiere
+.element1 div
 {
 	background-color: white;
 	border-radius: 30px;
 	padding: 5px 5px 5px 5px;
 	margin: 5px 930px 5px 5px;
+	width: 20%;
 }
 
-.port
-{
-	background-color: white;
-	border-radius: 30px;
-	padding: 5px 5px 5px 5px;
-	margin: 5px 930px 5px 5px;
-}
 
-.mouettes
-{
-	background-color: white;
-	border-radius: 30px;
-	padding: 5px 5px 5px 5px;
-	margin: 5px 930px 5px 5px;
-}
-
-.mer
-{
-	background-color: white;
-	border-radius: 30px;
-	padding: 5px 5px 5px 5px;
-	margin: 5px 930px 5px 5px;
-}
-
-.panier
-{
-	background-color: white;
-	border-radius: 30px;
-	padding: 5px 5px 5px 5px;
-	margin: 5px 930px 5px 5px;
-}
-
-.amina
-{
-	background-color: white;
-	border-radius: 30px;
-	padding: 5px 5px 5px 5px;
-	margin: 5px 930px 5px 5px;
-}
 
 .element1
 {
+	width: 70%;
 	background-color: #F2F2F2;
 	border-radius: 25px;
 }
@@ -123,4 +87,15 @@ li
 {
 	background-color: #F2F2F2;
 	border-radius: 25px;
+	width: 30%;
+}
+.element3
+{
+	width: 100%;
+}
+
+.element
+{
+	display: flex;
+	flex-wrap: wrap;
 }
