@@ -17,23 +17,39 @@
 	font-style: normal;
 }
 
+/* CSS pour le header */
+
+header
+{
+	margin: 0 15px 0 15px;
+}
+
+nav
+{
+	display: flex;
+	justify-content: space-between;
+}
+
 nav ul
 {
 	display: flex;
-	justify-content: flex-end;
+	padding: 10px 15px 0 0;
 }
 
-.localisation 
+nav li
 {
-	float: left;
-	width: 20px;
-	height: 20px;
+	margin-left: 30px;
 }
 
-body
+nav a
 {
-	font-family: 'raleway';
-	font-size: 0.8em;
+	text-decoration: none;
+	color: #0065FC;
+}
+
+a[href*="Activités"]
+{
+	color: black;
 }
 
 h1
@@ -41,6 +57,27 @@ h1
 	font-family: 'ranchoregular', Arial, sans-serif;
 	font-size: 4em;
 	color: #0065FC;
+	margin-top: 0;
+}
+
+.filtres ul
+{
+	display: flex;
+	flex-direction: row;
+	margin-left: 10px;
+}
+
+.filtres li
+{
+	margin-right: 10px;
+}
+
+/* Fin du CSS pour le header */
+
+body
+{
+	font-family: 'raleway', Arial, sans-serif;
+	font-size: 0.9em;
 }
 
 span
@@ -48,54 +85,85 @@ span
 	font-weight: bold;
 }
 
-.filtres
-{
-	display: flex;
-}
-
 li
 {
 	list-style-type: none;
 }
 
-.element1 img
+/* CSS pour les sections */
+
+main
 {
-	width: 300px;
-	height: 150px;
+	margin-left: 15px;
+	margin-right: 15px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.element1, .element2
+{
+	padding-left: 15px;
+	padding-right: 15px;
+
+}
+
+.element1 img, .element1 figure
+{
+	width: 100%;
+	height: 100px;
+	background-size: cover;
 	border-top-right-radius: 30px;
 	border-top-left-radius: 30px;
+	margin: 0;
+	background-position: center;
 }
-.element1 div
-{
-	background-color: white;
-	border-radius: 30px;
-	padding: 5px 5px 5px 5px;
-	margin: 5px 930px 5px 5px;
-	width: 20%;
-}
-
-
 
 .element1
 {
 	width: 70%;
 	background-color: #F2F2F2;
 	border-radius: 25px;
+	margin-right: 10px;
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+
+.element1 h2
+{
+	width: 100%;
+}
+
+.element1 div
+{
+	background-color: white;
+	border-radius: 30px;
+	padding: 5px 5px 5px 5px;
+	margin: 5px 0 5px 5px;
+	width: 30%;
+}
+
+.cannebiere figure
+{
+	background-image: url(images/Cannebiere.jpg);
 }
 
 .element2
 {
 	background-color: #F2F2F2;
 	border-radius: 25px;
-	width: 30%;
+	width: 20%;
+	margin-left: 10px;
+	display: flex;
 }
 .element3
 {
 	width: 100%;
 }
 
-.element
+#element
 {
 	display: flex;
 	flex-wrap: wrap;
+	width: 100%;
 }
