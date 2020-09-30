@@ -382,3 +382,36 @@ footer li
 
 .hébergements, .assistance
 {padding-left: 100px;}
+
+@media screen and (max-width: 1024px)
+{
+    header
+    {margin: auto;
+    width: auto;}
+
+    body
+    {width: auto;}
+
+    footer
+    {flex-direction: column;
+        margin: 0;}
+
+    main
+    {flex-direction: column;}
+
+    .element2
+    {width: auto;}
+
+    .element1
+    {background-color: white;
+    flex-direction: column;
+    margin: auto;}
+
+    .element1 div
+    {width: auto;}
+
+    .element3
+    {flex-direction: column;
+    margin: auto;
+    width: auto;}
+}
