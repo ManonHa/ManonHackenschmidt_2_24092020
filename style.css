@@ -126,8 +126,15 @@ button {
 }
 
 .filtres li {
-  margin-right: 20px;
-}
+    margin-right: 20px;
+  }
+
+  .filtres li:hover
+  {
+      color: #0065fc;
+      background-color: #deebff;
+      border-color: #deebff;
+  }
 
 .filtres span {
   padding: 5px;
@@ -162,7 +169,7 @@ button {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-right: 10px;
+  
 }
 
 #cercle i {
@@ -171,6 +178,7 @@ button {
 
 .info p {
   margin-bottom: 22px;
+  padding-left: 10px;
 }
 
 #cercle {
@@ -201,6 +209,15 @@ li {
 h3 {
   font-size: 1.1em;
 }
+
+.element1 a
+{color: black;
+text-decoration: none;}
+
+.element1, .element2
+{display: flex;
+flex-wrap: wrap;
+justify-content: space-around;}
 
 /* CSS pour les sections */
 main {
@@ -295,11 +312,6 @@ header {
   margin: 5px 0 5px 10px;
 }
 
-.element1 i {
-  margin-right: -10px;
-  margin-left: 10px;
-}
-
 #cannebiere,
 #mouettes,
 #mer1,
@@ -311,7 +323,7 @@ header {
 }
 
 /* lien sur toute la largeur de l'élément */
-a[href*="Marseille"] {
+a[href*="#hm"] {
   text-decoration: none;
   color: black;
   width: 100%;
