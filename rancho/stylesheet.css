@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'ranchoregular';
+    src: url('Rancho-Regular-webfont.eot');
+    src: url('Rancho-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Rancho-Regular-webfont.woff2') format('woff2'),
+         url('Rancho-Regular-webfont.woff') format('woff'),
+         url('Rancho-Regular-webfont.ttf') format('truetype'),
+         url('Rancho-Regular-webfont.svg#ranchoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
