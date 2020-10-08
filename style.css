@@ -224,6 +224,7 @@ main {
   margin-left: 15px;
   margin-right: 15px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 
@@ -247,20 +248,23 @@ header {
   border-radius: 20px;
   margin-right: 10px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-wrap: wrap;
+  padding: 15px;
+  box-sizing: border-box;
 }
 
 .element1 h2 {
   width: 100%;
   margin-left: 20px;
+  padding-top: 15px;
 }
 
-.element1 div {
+.element1 a {
   background-color: white;
   border-radius: 20px;
   padding: 5px 5px 10px 5px;
-  margin: 5px 0 5px 0;
+  margin: 5px 0 20px 0;
   width: 30%;
   box-shadow: 0px 0px 15px grey;
   justify-content: space-around;
@@ -326,9 +330,8 @@ header {
 a[href*="#hm"] {
   text-decoration: none;
   color: black;
-  width: 100%;
-  padding: 15px 0 15px 0;
-  margin-left: 15px;
+  width: auto;
+  padding: 15px;
 }
 
 .element2 {
@@ -344,8 +347,8 @@ a[href*="#hm"] {
 .element2 h2 {
   display: flex;
   justify-content: space-between;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 15px 15px 0 15px;
+
 }
 
 #pop {
@@ -360,7 +363,7 @@ a[href*="#hm"] {
   margin: auto;
   width: 85%;
   box-shadow: 0px 0px 15px grey;
-  justify-content: space-evenly;
+  height: 120px;
 }
 
 .element2 figcaption {
@@ -380,6 +383,7 @@ figcaption i {
 .element2 img,
 .element2 figure {
   width: 35%;
+  min-width: 35%;
   height: 100%;
   background-size: cover;
   border-bottom-left-radius: 20px;
@@ -491,12 +495,6 @@ figcaption i {
   height: 40%;
 }
 
-#element {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
 /* CSS pour le footer */
 footer {
   background-color: #f2f2f2;
@@ -514,6 +512,11 @@ footer li {
   padding-bottom: 10px;
 }
 
+footer li a{
+    text-decoration: none;
+    color: black;
+}
+
 .hébergements,
 .assistance {
   padding-left: 100px;
@@ -523,6 +526,20 @@ footer li {
   header {
     margin: auto;
     width: auto;
+  }
+
+  nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+  }
+
+  .ins {
+    grid-column: span 1;
+  }
+
+  .heb, .act {
+    grid-column: span 2;
   }
 
   .filtres {
@@ -577,7 +594,7 @@ footer li {
   .element1 h2
   {margin-left: 0;}
 
-  .element1 div {
+  .element1 a {
     width: auto;
   }
 
@@ -603,12 +620,19 @@ section:nth-child(1){
       order: 3;
   }
 
+  nav ul{
+      flex-direction: column;
+      width: 50%;
+  }
+
 nav li:nth-child(1){
       order: 2;
+      align-self: flex-end;
   }
 
   nav li:nth-child(2){
       order: 3;
+      align-self: flex-end;
   }
 
   nav li:nth-child(3){
