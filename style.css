@@ -119,15 +119,14 @@ button {
 }
 
 .filtres li {
-    margin-right: 20px;
-  }
+  margin-right: 20px;
+}
 
-  .filtres li:hover
-  {
-      color: #0065fc;
-      background-color: #deebff;
-      border-color: #deebff;
-  }
+.filtres li:hover {
+  color: #0065fc;
+  background-color: #deebff;
+  border-color: #deebff;
+}
 
 .filtres span {
   padding: 5px;
@@ -160,9 +159,7 @@ button {
 .info,
 #cercle {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  
 }
 
 #cercle i {
@@ -203,14 +200,17 @@ h3 {
   font-size: 1.1em;
 }
 
-.element1 a
-{color: black;
-text-decoration: none;}
+.element1 a {
+  color: black;
+  text-decoration: none;
+}
 
-.element1, .element2
-{display: flex;
-flex-wrap: wrap;
-justify-content: space-around;}
+.element1,
+.element2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 
 /* CSS pour les sections */
 main {
@@ -252,7 +252,12 @@ header {
   padding-bottom: 10px;
 }
 
-.cannebiere, .port, .mouettes, .mer, .panier, .amina {
+.cannebiere,
+.port,
+.mouettes,
+.mer,
+.panier,
+.amina {
   background-color: white;
   border-radius: 20px;
   padding: 5px 5px 10px 5px;
@@ -339,7 +344,6 @@ a[href*="#hm"] {
   display: flex;
   justify-content: space-between;
   padding: 15px 15px 0 15px;
-
 }
 
 #pop {
@@ -507,9 +511,9 @@ footer li {
   padding-bottom: 10px;
 }
 
-footer li a{
-    text-decoration: none;
-    color: black;
+footer li a {
+  text-decoration: none;
+  color: black;
 }
 
 .hébergements,
@@ -523,37 +527,55 @@ footer li a{
     width: auto;
   }
 
-  nav ul{
-    flex-direction: column;
-    width: 50%;
-}
+  nav a:nth-child(1) {
+  order: 1;
+  }
 
-nav li:nth-child(1){
-    order: 2;
-    align-self: flex-end;
-}
-
-nav li:nth-child(2){
+  nav a:nth-child(2) {
     order: 3;
     align-self: flex-end;
-}
+  }
 
-nav li:nth-child(3){
-    order: 1;
-}
+  nav a:nth-child(3) {
+    order: 4;
+    align-self: flex-end;
+  }
+
+  nav a:nth-child(4) {
+    order: 2;
+
+  }
 
   nav {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, auto);
+    grid-template-columns: 50% 50%;
   }
 
   .ins {
-    grid-column: span 1;
+    grid-column: 2;
+    grid-row: 1;
+    text-align: right;
   }
 
-  .heb, .act {
-    grid-column: span 2;
+  .act {
+    grid-column: 2;
+    grid-row: 2;
+    text-align: center;
+    border-top: none;
+    border-bottom: solid 2px #f2f2f2;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+
+  .heb
+   {
+    grid-column: 1;
+    grid-row: 2;
+    text-align: center;
+    border-top: none;
+    border-bottom: solid 2px #0065fc;
+    padding-bottom: 10px;
+    padding-top: 10px;
   }
 
   .filtres {
@@ -565,9 +587,8 @@ nav li:nth-child(3){
     padding-left: 0;
   }
 
-  .filtres li{
-      margin-bottom: 5px;
-      
+  .filtres li {
+    margin-bottom: 5px;
   }
 
   body {
@@ -579,8 +600,9 @@ nav li:nth-child(3){
     margin: 0;
   }
 
-  .hébergements, .assistance {
-      padding-left: 0;
+  .hébergements,
+  .assistance {
+    padding-left: 0;
   }
 
   main {
@@ -589,14 +611,15 @@ nav li:nth-child(3){
   }
 
   .element2 {
-    width: 100%;
+    width: auto;
     border-radius: revert;
-    margin-left: 0;
+    margin: auto;
     padding: 0;
   }
 
-  .element2 div
-  {margin-bottom: 10px;}
+  .element2 a {
+    margin-bottom: 10px;
+  }
 
   .element1 {
     background-color: white;
@@ -605,32 +628,37 @@ nav li:nth-child(3){
     width: auto;
   }
 
-  .element1 h2
-  {margin-left: 0;}
+  .element1 h2 {
+    margin-left: 0;
+  }
 
   .element1 a {
     width: auto;
   }
 
-  .element3 div{
-    flex-direction: row;
-    margin: auto;
+  .element3 {
+    width: auto;
+  }
+
+  .element3 div {
     height: auto;
+  }
+
+  .element3 a {
+    width: 100%;
+    height: 170px;
     margin-bottom: 20px;
   }
-  .element3> div> div{
-      width: 100%;
+
+  section:nth-child(1) {
+    order: 2;
   }
 
-section:nth-child(1){
-      order: 2;
+  section:nth-child(2) {
+    order: 1;
   }
 
-  section:nth-child(2){
-      order: 1;
-  }
-
-  section:nth-child(3){
-      order: 3;
+  section:nth-child(3) {
+    order: 3;
   }
 }
