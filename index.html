@@ -4,6 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/c9f3f525dd.js"
       crossorigin="anonymous"
@@ -24,17 +28,20 @@
 
       <!-- furmulaire de recherche (Marseille, France) -->
 
-      <form method="post" action="traitement.php">
+      <form method="post" action="#">
         <div class="form">
           <i id="map" class="fas fa-map-marker-alt"></i>
-          <label for="localisation" alt="localisation"></label>
+          <label for="localisation"></label>
           <input
             type="text"
             name="localisation"
             id="localisation"
             placeholder="Marseille, France"
           />
-          <button>Rechercher</button>
+          <button>
+            <span class="search">Rechercher</span
+            ><span class="loupe"><i class="fas fa-search"></i></span>
+          </button>
         </div>
       </form>
 
@@ -126,36 +133,36 @@
       </section>
 
       <section class="element2">
-        <h2>Les plus poulaires<i id="pop" class="fas fa-chart-line"></i></h2>
+        <h2>Les plus populaires<i id="pop" class="fas fa-chart-line"></i></h2>
         <a href="#" class="soleil">
           <figure></figure>
-          <figcaption>
+          <div>
             <h3>Hôtel Le soleil du matin</h3>
             <p>Nuit à partir de <span>128€</span></p>
             <i class="fas fa-star"></i><i class="fas fa-star"></i
             ><i class="fas fa-star"></i><i class="fas fa-star"></i
             ><i class="fas fa-star"></i>
-          </figcaption>
+          </div>
         </a>
         <a href="#" class="eau">
           <figure></figure>
-          <figcaption>
+          <div>
             <h3>Au coeur de l'eau Chambres d'hôtes</h3>
             <p>Nuit à partir de <span>71€</span></p>
             <i class="fas fa-star"></i><i class="fas fa-star"></i
             ><i class="fas fa-star"></i><i class="fas fa-star"></i
             ><i id="eau" class="fas fa-star"></i>
-          </figcaption>
+          </div>
         </a>
         <a href="#" class="bleu_blanc">
           <figure></figure>
-          <figcaption>
+          <div>
             <h3>Hôtel Tout bleu et blanc</h3>
             <p>Nuit à partir de <span>68€</span></p>
             <i class="fas fa-star"></i><i class="fas fa-star"></i
             ><i class="fas fa-star"></i><i class="fas fa-star"></i
             ><i id="bleu_blanc" class="fas fa-star"></i>
-          </figcaption>
+          </div>
         </a>
       </section>
 
