@@ -523,7 +523,6 @@ footer li a {
 
 @media screen and (max-width: 1023px) {
   main {
-    max-width: 600px;
     flex-direction: column;
     margin: 0;
   }
@@ -559,6 +558,8 @@ footer li a {
   button {
     border-radius: 13px;
     width: 40px;
+    position: relative;
+    left: -10px;
   }
 
   .loupe {
@@ -624,7 +625,9 @@ footer li a {
     margin: 0;
     padding: 0 0 20px 0;
   }
-
+  .element2 h2 {
+    justify-content: space-around;
+  }
   .element2 a {
     margin-bottom: 10px;
     max-width: 285px;
@@ -635,10 +638,6 @@ footer li a {
     flex-direction: column;
     margin: auto;
     width: 305px;
-  }
-
-  .element1 h2 {
-    margin-left: 0;
   }
 
   .element1 a {
@@ -677,9 +676,67 @@ footer li a {
     margin: 0;
   }
 
-  footer h3, footer ul
-  {
+  footer h3,
+  footer ul {
     margin-left: 20px;
     padding: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  main {
+    max-width: 1023px;
+  }
+
+  .filtres ul {
+    padding-left: 10px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .hébergements,
+  .assistance {
+    padding-left: 100px;
+  }
+
+  .element3 {
+    width: 700px;
+    margin: 5px 10px 10px 20px;
+    justify-content: center;
+  }
+
+  .element3 div {
+    flex-direction: row;
+  }
+
+  .element3 a {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+
+  .element1 {
+    flex-direction: row;
+    width: 700px;
+  }
+
+  .element1 a {
+    width: 45%;
+  }
+
+  .element2 {
+    width: 350px;
+    margin: auto;
+    border-radius: 15px;
+  }
+
+  .element2 div {
+    padding: 0 5px 0 5px;
+  }
+
+  header {
+    margin: 0 20px 0 20px;
   }
 }
