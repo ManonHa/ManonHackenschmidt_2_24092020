@@ -684,12 +684,12 @@ footer li a {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  main {
-    max-width: 1023px;
-  }
-
   .filtres ul {
     padding-left: 10px;
+  }
+
+  .filtres li{
+    margin-right: 10px;
   }
 
   footer {
