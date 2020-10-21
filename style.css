@@ -621,9 +621,9 @@ footer li a {
 
   .element2 {
     width: auto;
-    border-radius: revert;
+    border-radius: 0px;
     margin: 0;
-    padding: 0 0 20px 0;
+    padding-bottom: 20px;
   }
   .element2 h2 {
     justify-content: space-around;
@@ -688,7 +688,7 @@ footer li a {
     padding-left: 10px;
   }
 
-  .filtres li{
+  .filtres li {
     margin-right: 10px;
   }
 
