@@ -22,7 +22,8 @@ h3 {
 }
 
 body {
-  font-size: 13px;
+  font-size: 13px; 
+  font-family: "Raleway", sans-serif, Arial;
 }
 
 /* CSS pour le header */
@@ -43,23 +44,24 @@ nav a {
 
 .heb {
   border-top: #0065fc solid 2px;
-  padding: 30px 15px 0 15px;
+  padding: 20px 15px 0 15px;
 }
 
 .act {
   color: black;
   border-top: transparent solid 2px;
-  padding: 30px 15px 0 15px;
+  padding: 20px 15px 0 15px;
 }
 
 .ins {
   border-top: transparent solid 2px;
-  padding: 30px 0px 0 15px;
+  padding: 20px 0px 0 15px;
 }
 
 h1 {
   font-family: "ranchoregular", sans-serif, Arial;
-  font-size: 60px;
+  font-size: 40px;
+  font-weight: normal;
   color: #0065fc;
   margin: 0;
   flex-grow: 2;
@@ -84,6 +86,8 @@ input {
   font-weight: bold;
   font-family: "Raleway";
   padding-left: 10px;
+  color: black;
+  font-weight: bold;
 }
 
 #map {
@@ -186,10 +190,6 @@ button {
 }
 /* Fin du CSS pour le header */
 
-body {
-  font-family: "Raleway", sans-serif, Arial;
-}
-
 span {
   font-weight: bold;
 }
@@ -204,6 +204,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  max-width: 1920px;
 }
 
 .element1 a {
@@ -238,9 +239,9 @@ header {
   border-radius: 20px;
   margin-right: 5px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
-  padding: 15px;
+  padding: 25px;
   box-sizing: border-box;
 }
 
@@ -260,13 +261,12 @@ header {
   padding: 5px;
   margin: 5px 0 15px 0;
   width: 30%;
+  max-width: 315px;
   box-shadow: 0px 0px 15px grey;
-  justify-content: space-around;
 }
 
-a[href*="#hm"] {
-  color: black;
-  width: auto;
+.plus {
+  width: 100%;
 }
 
 .element1 img,
@@ -352,7 +352,11 @@ a[href*="#hm"] {
   padding: 5px 5px 5px 5px;
   margin: auto;
   width: 90%;
+<<<<<<< HEAD
   max-width: 280px;
+=======
+  max-width: 270px;
+>>>>>>> branchMedia
   box-shadow: 0px 0px 15px grey;
   height: 120px;
   text-decoration: none;
@@ -402,6 +406,7 @@ a[href*="#hm"] {
 
 .element3 {
   width: 100%;
+  margin-left: 10px;
 }
 
 .element3 h2 {
@@ -703,7 +708,7 @@ footer li a {
 
   .element3 {
     width: 700px;
-    margin: 5px 10px 10px 20px;
+    margin: auto;
     justify-content: center;
   }
 
